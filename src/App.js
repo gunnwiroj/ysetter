@@ -6,6 +6,7 @@ import ParentForm from './components/ParentForm';
 import index from './components/index';
 import Nav from './components/nav';
 import Supplier from './components/Supplier';
+import Camp from './components/Camp';
 class App extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class App extends Component {
             <Route path="/childform" component={ChildForm}/>
             <Route path="/parentform" component={ParentForm}/>
             <Route path="/Supplier" component={Supplier}/>
+            <Route path="/Camp" component={Camp}/>
           </Switch>
       </div>
     );
