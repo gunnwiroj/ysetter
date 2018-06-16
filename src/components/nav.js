@@ -7,20 +7,20 @@ class Nav extends Component {
 
     ) {
         return (
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+            <nav className="navbar navbar-default">
+                <div className="container-fluid">
+                    <div className="navbar-header">
+                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
                         </button>
                         <a href="/" >
-                            <img alt="k" src="https://th1-cdn.pgimgs.com/cms/news/2017/10/Sansiri-Logo-e1507516139823.original.jpg" style={{ width: 60,paddingTop:8 }} />
+                            <img alt="k" src="https://th1-cdn.pgimgs.com/cms/news/2017/10/Sansiri-Logo-e1507516139823.original.jpg" style={{ width: 60,paddingTop:8,paddingBottom:8 }} />
                         </a>
                     </div>
-                    <div class="collapse navbar-collapse" id="myNavbar" style={{paddingLeft:10}}>
-                        <ul class="nav navbar-nav">
+                    <div className="collapse navbar-collapse" id="myNavbar" style={{paddingLeft:10}}>
+                        <ul className="nav navbar-nav">
                             <li>
                                 <Link to="/childform">เพิ่มเด็ก</Link>
                             </li>
