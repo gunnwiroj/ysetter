@@ -7,10 +7,31 @@ class Camp extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            hasGoodSpace:''
+            hasGoodSpace:'',
+            selectedOption:'',
+            province:'',
+
         };
         this.onChange = this.onChange.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.handleChange2 = this.handleChange2.bind(this);
     }
+
+    handleChange = (selectedOption) => {
+        this.setState({ selectedOption});
+            // selectedOption can be null when the `x` (close) button is clicked
+            if (selectedOption) {
+            console.log(`Selected: ${selectedOption.label}`);
+            }
+      }
+
+      handleChange2 = (province) => {
+        this.setState({ province });
+            // selectedOption can be null when the `x` (close) button is clicked
+            if (province) {
+            console.log(`Selected: ${province.label}`);
+            }
+      }
 
     onChange = (fieldName) => {
         return (e) => {
@@ -18,6 +39,7 @@ class Camp extends Component{
                 [fieldName]: e.target.value
                 
             }
+            console.log([fieldName]);
         }
     }
 
@@ -47,6 +69,8 @@ class Camp extends Component{
             {value:true , label:'ใช่'},
             {value:false, label:'ไม่'}
         ]
+        const { selectedOption } = this.state;
+        const { province } = this.state;
         return(
             <div>
                 <div className="container-fluid" style={{textAlign:"left"}}>
@@ -58,7 +82,7 @@ class Camp extends Component{
                             <div className="panel-body">
                                 <div className="row" style={{paddingBottom:7}}>
                                     <div className="col-md-2 col-md-offset-2">
-                                        <label style={{paddingTop:8}}>ถนน</label>
+                                        <label style={{paddingTop:8}}>ที่อยู่</label>
                                     </div>
                                     <div className="col-md-4">
                                         <input className="form-control" required onChange={this.onChange("street")}/>
@@ -66,7 +90,7 @@ class Camp extends Component{
                                 </div>
                                 <div className="row" style={{paddingBottom:7}}>
                                     <div className="col-md-2 col-md-offset-2">
-                                        <label style={{paddingTop:8}}>ซอย</label>
+                                        <label style={{paddingTop:8}}>แขวง</label>
                                     </div>
                                     <div className="col-md-4">
                                         <input className="form-control" />
@@ -80,17 +104,22 @@ class Camp extends Component{
                                         <Select
                                             options={poption}
                                             searchable={true}
+                                            value={province}
+                                            onChange={this.handleChange2}
                                         />
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-md-offset-2">
-                                    <label>อยู่ในโครงการ Good Space</label>
-                                    <Select
+                                <div className="row" style={{paddingButtom:7}}>
+                                <div className="col-md-2 col-md-offset-2">
+                                    <label style={{paddingTop:8}}>อยู่ในโครงการ Good Space</label>
+                                </div>
+                                <div className="col-md-4">
+                                <Select
                                         options={options}
                                         onChange={this.handleChange}
-                                        value={selectOption}
-
+                                        value={selectedOption}
                                     />
+                                </div>
                                 </div>
                                 <div className="col-md-6" style={{textAlign:"right"}}>
                                     <button className="btn btn-default" type="submit">Submit</button>

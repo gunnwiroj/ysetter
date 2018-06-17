@@ -7,7 +7,8 @@ import index from './components/index';
 import Nav from './components/nav';
 import Supplier from './components/Supplier';
 import Camp from './components/Camp';
-import Search from './components/Search'
+import Search from './components/Search';
+import Project from './components/project';
 class App extends Component {
   render() {
     return (
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/supplier" component={Supplier}/>
             <Route path="/camp" component={Camp}/>
             <Route path="/search" component={Search}/>
+            <Route path="/project" component={Project}/>
           </Switch>
       </div>
     );

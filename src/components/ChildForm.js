@@ -9,6 +9,8 @@ class ChildForm extends Component {
             join:false
         }
         this.toHandlejoin = this.toHandlejoin.bind(this);
+        this.handledate = this.handledate.bind(this);
+        this.onChange = this.onChange.bind(this);
     }
 handledate(e){
     let selectdate = (new Date(e.target.value)).toISOString();
@@ -20,6 +22,16 @@ toHandlejoin(){
     this.setState({
         join: !this.state.join
     })
+}
+
+onChange = (fieldName) => {
+    return (e) => {
+        this.state = {
+            [fieldName]: e.target.value
+            
+        }
+        console.log([fieldName]);
+    }
 }
     render() {
         return (

@@ -5,17 +5,27 @@ class Vaccine extends Component{
         super(props);
         this.state = {
             vaccinecheck:false,
-            isHidden:false
+
         }
         this._checkhandle = this._checkhandle.bind(this);
     }
     _checkhandle(e){
        this.setState({
            vaccinecheck: !this.state.vaccinecheck,
-           isHidden: ! this.state.isHidden
        })
        console.log(this.state.vaccinecheck)
     }
+
+    onChange = (fieldName) => {
+        return (e) => {
+            this.state = {
+                [fieldName]: e.target.value
+                
+            }
+            console.log([fieldName]);
+        }
+    }
+    
     render(){
        
         return(
@@ -29,9 +39,6 @@ class Vaccine extends Component{
                             <div className="col-md-6 col-md-offset-2 ">
                                 <input type="checkbox" checked={this.state.vaccinecheck} onChange={(e)=>this._checkhandle(e)}/>
                                 <label style={{paddingLeft:15}}>สถานะการรับวัคซีนช่วงอายุ 0-4 ปี</label>
-                            </div>
-                            <div className="col-md-6 col-md-offset-2">
-                                
                             </div>
                         </div>
                     </div>

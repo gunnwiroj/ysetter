@@ -33,6 +33,9 @@ class Nav extends Component {
                             <li>
                                 <Link to="/search">ค้นหาเด็กในระบบ</Link>
                             </li>
+                            <li>
+                                <Link to="/project">เพิ่มโปรเจค</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

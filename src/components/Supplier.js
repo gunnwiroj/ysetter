@@ -2,7 +2,26 @@ import React, { Component } from 'react';
 import Select from 'react-select';
 import STATES from './data/province'
 class Supplier extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            firstname:'',
+            lastname:'',
+            province:'',
+            telephone:'',
+            email:'',
+        }
+    }
 
+    onChange = (fieldName) => {
+        return (e) => {
+            this.state = {
+                [fieldName]: e.target.value
+                
+            }
+            console.log([fieldName]);
+        }
+    }
 
     render() {
         const poption = STATES['PV'];
@@ -17,7 +36,7 @@ class Supplier extends Component {
                                 <label style={{paddingTop:5}}>โครงการที่ดูแล</label>
                             </div>
                             <div className="col-md-4">
-                                <input className="form-control" />
+                                <input className="form-control"/>
                             </div>
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
@@ -25,7 +44,7 @@ class Supplier extends Component {
                                 <label style={{paddingTop:5}}>ช่ือ</label>
                             </div>
                             <div className="col-md-4">
-                                <input className="form-control" />
+                                <input className="form-control" onChange={this.onChange("firstname")}/>
                             </div>
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
@@ -33,7 +52,7 @@ class Supplier extends Component {
                                 <label style={{paddingTop:5}}>สกุล</label>
                             </div>
                             <div className="col-md-4">
-                                <input className="form-control" />
+                                <input className="form-control" onChange={this.onChange("lastname")}/>
                             </div>
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
@@ -41,7 +60,7 @@ class Supplier extends Component {
                                 <label style={{paddingTop:5}}>เบอร์ติดต่อ</label>
                             </div>
                             <div className="col-md-4">
-                                <input className="form-control" />
+                                <input className="form-control" onChange={this.onChange("telephone")}/>
                             </div>
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
@@ -60,7 +79,7 @@ class Supplier extends Component {
                                 <label style={{paddingTop:5}}>E-mail</label>
                             </div>
                             <div className="col-md-4">
-                                <input className="form-control" />
+                                <input className="form-control" onChange={this.onChange("email")}/>
                             </div>
                         </div>
                     </div>
