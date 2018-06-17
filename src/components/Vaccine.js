@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-
 class Vaccine extends Component{
     
     constructor(props){
         super(props);
         this.state = {
             vaccinecheck:false,
+            isHidden:false
         }
         this._checkhandle = this._checkhandle.bind(this);
     }
     _checkhandle(e){
        this.setState({
            vaccinecheck: !this.state.vaccinecheck,
+           isHidden: ! this.state.isHidden
        })
        console.log(this.state.vaccinecheck)
     }
     render(){
+       
         return(
             <div className="col-md-8 col-md-offset-2">
                 <div className="panel panel-default">
@@ -25,10 +27,12 @@ class Vaccine extends Component{
                     <div className="panel-body">
                     <div className="row">
                             <div className="col-md-6 col-md-offset-2 ">
-                            <input type="checkbox" checked={this.state.vaccinecheck} onChange={(e)=>this._checkhandle(e)}/>
-                            <label style={{paddingLeft:15}}>สถานะการรับวัคซีนช่วงอายุ 0-4 ปี</label>
+                                <input type="checkbox" checked={this.state.vaccinecheck} onChange={(e)=>this._checkhandle(e)}/>
+                                <label style={{paddingLeft:15}}>สถานะการรับวัคซีนช่วงอายุ 0-4 ปี</label>
                             </div>
-                            
+                            <div className="col-md-6 col-md-offset-2">
+                                
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -14,7 +14,7 @@ class Supplier extends Component {
                     <div className="panel-body">
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>โครงการที่ดูแล</label>
+                                <label style={{paddingTop:5}}>โครงการที่ดูแล</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -22,7 +22,7 @@ class Supplier extends Component {
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>ช่ือ</label>
+                                <label style={{paddingTop:5}}>ช่ือ</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -30,7 +30,7 @@ class Supplier extends Component {
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>สกุล</label>
+                                <label style={{paddingTop:5}}>สกุล</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -38,7 +38,7 @@ class Supplier extends Component {
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>เบอร์ติดต่อ</label>
+                                <label style={{paddingTop:5}}>เบอร์ติดต่อ</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -46,7 +46,7 @@ class Supplier extends Component {
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>จังหวัด</label>
+                                <label style={{paddingTop:5}}>จังหวัด</label>
                             </div>
                             <div className="col-md-4">
                                 <Select
@@ -57,7 +57,7 @@ class Supplier extends Component {
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>E-mail</label>
+                                <label style={{paddingTop:5}}>E-mail</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />

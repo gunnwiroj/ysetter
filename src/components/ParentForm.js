@@ -11,7 +11,7 @@ class ParentForm extends Component{
                     <div className="panel-body">
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>เพศ</label>
+                                <label style={{paddingTop:5}}>เพศ</label>
                             </div>
                             <div className="col-md-4">
                                 <select className="form-control">
@@ -23,7 +23,7 @@ class ParentForm extends Component{
 
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>ชื่อ</label>
+                                <label style={{paddingTop:5}}>ชื่อ</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -31,7 +31,7 @@ class ParentForm extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>สกุล</label>
+                                <label style={{paddingTop:5}}>สกุล</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -39,7 +39,7 @@ class ParentForm extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>อาชีพ</label>
+                                <label style={{paddingTop:5}}>อาชีพ</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -47,7 +47,7 @@ class ParentForm extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>รูป</label>
+                                <label style={{paddingTop:5}}>รูป</label>
                             </div>
                             <div className="col-md-4">
                                 <input type="file"className="form-control" />
@@ -55,7 +55,7 @@ class ParentForm extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>เบอร์โทรศัพท์</label>
+                                <label style={{paddingTop:5}}>เบอร์โทรศัพท์</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -63,7 +63,7 @@ class ParentForm extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>สัญชาติ</label>
+                                <label style={{paddingTop:5}}>สัญชาติ</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -71,7 +71,7 @@ class ParentForm extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>เชื่อชาติ </label>
+                                <label style={{paddingTop:5}}>เชื่อชาติ </label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />
@@ -79,7 +79,7 @@ class ParentForm extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>แคมป์</label>
+                                <label style={{paddingTop:5}}>แคมป์</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" />

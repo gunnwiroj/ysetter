@@ -11,7 +11,7 @@ class Education extends Component{
                     <div className="panel-body">
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>โรงเรียน</label>
+                                <label style={{paddingTop:8}}>โรงเรียน</label>
                             </div>
                             <div className="col-md-4">
                                 <input className="form-control" type="input" />
@@ -19,7 +19,7 @@ class Education extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>การศึกษาสูงสุด</label>
+                                <label style={{paddingTop:8}}>การศึกษาสูงสุด</label>
                             </div>
                             <div className="col-md-4">
                                 <Select
@@ -29,7 +29,7 @@ class Education extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>ปีเริ่มการศึกษา</label>
+                                <label style={{paddingTop:8}}>ปีเริ่มการศึกษา</label>
                             </div>
                             <div className="col-md-4">
                                 <input type="input" className="form-control" />
@@ -37,7 +37,7 @@ class Education extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>ปีที่คาดว่าจะจบ</label>
+                                <label style={{paddingTop:8}}>ปีที่คาดว่าจะจบ</label>
                             </div>
                             <div className="col-md-4">
                                 <input type="input" className="form-control"/>
@@ -45,7 +45,7 @@ class Education extends Component{
                         </div>
                         <div className="row" style={{paddingBottom:7}}>
                             <div className="col-md-2 col-md-offset-2">
-                                <label>ประเทศ</label>
+                                <label style={{paddingTop:8}}>ประเทศ</label>
                             </div>
                             <div className="col-md-4">
                                 <input type="input" className="form-control" />

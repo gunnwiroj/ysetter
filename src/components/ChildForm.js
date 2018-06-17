@@ -31,7 +31,7 @@ toHandlejoin(){
                         <div className="panel-body">
                             <div className="row" style={{paddingBottom:7}}>
                                 <div className="col-md-2 col-md-offset-2">
-                                    <label>เพศ</label>
+                                    <label style={{paddingTop:8}}>เพศ</label>
                                 </div>
                                 <div className="col-md-4">
                                     <select className="form-control">
@@ -42,7 +42,7 @@ toHandlejoin(){
                             </div>
                             <div className="row" style={{paddingBottom:7}}>
                                 <div className="col-md-2 col-md-offset-2">
-                                    <label >ชื่อ</label>
+                                    <label style={{paddingTop:8}}>ชื่อ</label>
                                 </div>
                                 <div className="col-md-4">
                                     <input className="form-control" required />
@@ -50,7 +50,7 @@ toHandlejoin(){
                             </div>
                             <div className="row" style={{paddingBottom:7}}>
                                 <div className="col-md-2 col-md-offset-2">
-                                    <label>นามสกุล</label>
+                                    <label style={{paddingTop:8}}>นามสกุล</label>
                                 </div>
                                 <div className="col-md-4">
                                     <input className="form-control" required />
@@ -58,7 +58,7 @@ toHandlejoin(){
                             </div>
                             <div className="row" style={{paddingBottom:7}}>
                                 <div className="col-md-2 col-md-offset-2">
-                                    <label>วันเกิด</label>
+                                    <label style={{paddingTop:8}}>วันเกิด</label>
                                 </div>
                                 <div className="col-md-4">
                                     <input type="date" className="form-control" onChange={(e) => this.handledate(e)}/>
@@ -82,7 +82,15 @@ toHandlejoin(){
                             </div>
                             <div className="row" style={{paddingBottom:7}}>
                                 <div className="col-md-2 col-md-offset-2">
-                                    <label>แคมป์ที่อาศัย</label>
+                                    <label style={{paddingTop:8}}>แคมป์ที่อาศัย</label>
+                                </div>
+                                <div className="col-md-4">
+                                    
+                                </div>
+                            </div>
+                            <div className="row" style={{paddingBottom:7}}>
+                                <div className="col-md-2 col-md-offset-2">
+                                    <label style={{paddingTop:8}}>สถานะการติดตาม</label>
                                 </div>
                                 <div className="col-md-4">
                                     <input className="form-control" />
@@ -90,15 +98,7 @@ toHandlejoin(){
                             </div>
                             <div className="row" style={{paddingBottom:7}}>
                                 <div className="col-md-2 col-md-offset-2">
-                                    <label>สถานะการติดตาม</label>
-                                </div>
-                                <div className="col-md-4">
-                                    <input className="form-control" />
-                                </div>
-                            </div>
-                            <div className="row" style={{paddingBottom:7}}>
-                                <div className="col-md-2 col-md-offset-2">
-                                    <label>รูป</label>
+                                    <label style={{paddingTop:8}}>รูป</label>
                                 </div>
                                 <div className="col-md-4">
                                     <input type="file" />
@@ -107,7 +107,7 @@ toHandlejoin(){
                             <div className="row" style={{paddingBottom:7}}>
                                 <div className="col-md-4 col-md-offset-2">
                                     <input type="checkbox" checked={this.state.join} onChange={()=>this.toHandlejoin()}/>
-                                    <label>อยู่ในโครงการ Good Space</label>
+                                    <label style={{paddingLeft:15}}>อยู่ในโครงการ Good Space</label>
                                 </div>
                             </div>
                         </div>
