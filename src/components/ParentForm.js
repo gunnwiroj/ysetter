@@ -20,10 +20,10 @@ class ParentForm extends Component{
 
     onChange = (fieldName) => {
         return (e) => {
-            this.state = {
+            this.setState({
                 [fieldName]: e.target.value
                 
-            }
+            })
             console.log([fieldName]);
         }
     }
